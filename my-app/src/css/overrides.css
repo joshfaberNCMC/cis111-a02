@@ -1,0 +1,126 @@
+@import 'normalize.css';
+
+body { /* https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#7c0000, #000000)
+}
+
+.background-box {
+  background-color: #fff;
+  padding: 3%;
+  text-align: left;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin: 4.5%;
+  box-sizing: border-box; /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+}
+
+h1 em {
+  color: #ee474f;
+  font-style: normal;
+}
+
+h1, h2 {
+  font-family: Trebuchet MS;
+}
+
+p {
+  font-family: Georgia;
+  text-align: justify;
+}
+
+.titles {
+  font-style: italic;
+}
+
+.closing {
+  text-indent: : 10px;
+}
+
+a {
+  text-decoration: none; /* didn't like how the links looked with an underline */
+}
+
+html {
+  font-size:100%; /* I went back and commented on my code when you put the rubric out and I honestly can't remember what I had this here for. I'm assuming it was for an actual reason so I'm not removing it I just can't explain my reasoning lol */
+}
+
+ol {
+  font-size: 0.85rem; /* https://www.sitepoint.com/understanding-and-using-rem-units-in-css/ */
+}
+
+@media (min-width: 640px) { /* https://www.w3schools.com/howto/howto_css_responsive_text.asp */
+    body {font-size: 1.15rem;}
+    h1 {font-size: 2rem;}
+    h2 {font-size: 1.8rem; }
+}
+
+@media (min-width:960px) {
+   body {font-size:1.25rem;}
+   h1 {font-size: 2.1rem;}
+   h2 {font-size: 1.9rem;}
+ }
+
+@media (min-width:1100px) {
+   body {font-size:1.35rem;}
+   h1 {font-size: 2.2rem;}
+   h2 {font-size: 2rem;}
+ }
+
+ img {
+    max-width: 100%;
+    height: auto;
+    background-color: #7c0000;
+    display: block; /* not sure if this actually does anything for the purpose I'm using it for but everything I looked at online had this rule for images */
+ }
+
+.cliff {
+   width: 100%;
+   height: auto;
+   border: 1.5px solid #7c0000;
+}
+
+.tree-of-death {
+   width: 40%;
+   max-width: 80px; /* put a max width to stop the image from getting too large when scaled up */
+   height: auto;
+   margin-right: 5px;
+   float: left;
+   border: 1.5px solid #7c0000;
+}
+
+.comparison { /* https://www.geeksforgeeks.org/how-to-wrap-the-text-around-an-image-using-html-and-css/ */
+  float: right;
+  margin-left: 10px;
+  width: 65%;
+  max-width: 600px;
+}
+
+.break {
+  padding-top: 0.1;
+}
+
+.container {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  font-size: 60px;
+  color: #fff;
+  top: -50px;
+  left: 22px;
+}
+
+.xerxes {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  width: 60%;
+  max-width: 600px; /* also didn't want this image getting too big when the screen scales up */
+}
+
+.quote {
+  padding-left: 4%;
+  padding-right: 4%;
+}

@@ -1,0 +1,79 @@
+@import 'normalize';
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+html {
+  background: url('../images/stormy-weather-background.webp'); /* https://css-tricks.com/perfect-full-page-background-image/ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  height: 100vh;
+}
+
+.text {
+  position: absolute;
+  font-size: 60px;
+  color: #fff;
+  top: -50px;
+  left: -5px;
+  padding-left: 1.5%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  background: rgba(0, 0, 0, 0.6); /* https://stackoverflow.com/questions/10422949/css-background-opacity */
+  width: 98.7%;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+
+.screen {
+  fill: #bab4b4;
+  height: 3.5rem;
+  float: right;
+  padding: 1%;
+  position: absolute;
+  right: 0rem;
+  display: block;
+}
+
+.tablet {
+  fill: #bab4b4;
+  height: 3.5rem;
+  float: right;
+  padding: 1%;
+  position: absolute;
+  right: 4rem;
+  display: block;
+}
+
+.container {
+  position: relative;
+}
+
+.smartphone {
+  fill: #bab4b4;
+  height: 3.5rem;
+  float: right;
+  padding: 1%;
+  position: absolute;
+  right: 7.5rem;
+  display: block;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2%;
+  text-align: left;
+  border: 6.5px double #fff; /* https://www.w3schools.com/css/css_border.asp */
+  margin: 4.5%;
+  box-sizing: border-box;
+  position: absolute;
+  top:11%;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-style: bold;
+}
